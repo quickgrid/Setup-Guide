@@ -1,6 +1,13 @@
 # Build-Guide
 A build guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows, Android etc.
 
+## Tools Required
+
+Download the installer or zip version of cmake.
+
+- CMake, https://cmake.org/download/
+- Visual Studio 2019 Community Edition,
+
 
 ## Android
 
