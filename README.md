@@ -3,10 +3,17 @@ A build guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows, 
 
 ## Tools Required
 
-Download the installer or zip version of cmake.
+Download the installer or zip version of cmake. Dlib 19.19 from official website had bug with opencv `cv_image` which is fixed on github source.
 
 - CMake, https://cmake.org/download/
 - Visual Studio 2019 Community Edition,
+- Vulkan SDK, https://vulkan.lunarg.com/sdk/home
+- Cuda and cuDNN with `CUDA_PATH` environment variable set
+- Dlib source code from github, https://github.com/davisking/dlib
+- Anaconda, https://www.anaconda.com/products/individual
+- NCNN source, https://github.com/Tencent/ncnn
+- OpenCV source, https://github.com/opencv/opencv
+- OpenCV contrib source, https://github.com/opencv/opencv_contrib
 
 
 ## Android
