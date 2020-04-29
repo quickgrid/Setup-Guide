@@ -14,8 +14,17 @@ But easiest way at the moment is download prebuilt version of latest opencv cont
 
 https://pullrequest.opencv.org/buildbot/export/opencv_releases/master-contrib_pack-contrib-android/
 
+### Dlib
+
+### NCNN
+
+
 
 ## Windows
 
+### OpenCV Contrib
 
+### Dlib
+
+### NCNN
 
