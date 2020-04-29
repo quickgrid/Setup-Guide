@@ -28,7 +28,20 @@ But easiest way at the moment is download prebuilt version of latest opencv cont
 
 https://pullrequest.opencv.org/buildbot/export/opencv_releases/master-contrib_pack-contrib-android/
 
+Use the following link and template to setup native opencv project for android,
+
+https://github.com/VlSomers/native-opencv-android-template
+
 ### Dlib
+
+Get dlib master source code from github and compile with this script after changing paths, 
+
+https://stackoverflow.com/questions/60548479/setting-up-dlib-for-android-studio/60550358#60550358
+
+Original script source,
+
+https://github.com/Luca96/dlib-for-android
+
 
 ### NCNN
 
