@@ -18,7 +18,13 @@ https://pullrequest.opencv.org/buildbot/export/opencv_releases/master-contrib_pa
 
 ### NCNN
 
+https://github.com/Tencent/ncnn/wiki/how-to-build
 
+Easiest option for android is download prebuilt releases,
+
+https://github.com/Tencent/ncnn/releases
+
+Download vulkan library for GPU support.
 
 ## Windows
 
@@ -28,3 +34,4 @@ https://pullrequest.opencv.org/buildbot/export/opencv_releases/master-contrib_pa
 
 ### NCNN
 
+https://github.com/Tencent/ncnn/wiki/how-to-build
