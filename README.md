@@ -16,7 +16,7 @@ Download the installer or zip version of cmake. Dlib 19.19 from official website
 - OpenCV contrib source, https://github.com/opencv/opencv_contrib
 
 
-## Implementable Projects
+## Projects Tested
 
 These are some of the projects I have tested. Most or all of these can be implemented in both pc and android. 
 
