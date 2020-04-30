@@ -1,5 +1,5 @@
 # Build-Guide
-A build and setup guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows, Android etc.
+A build and setup guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows C++, Python and Android C++, Java etc.
 
 ## Tools Required
 
