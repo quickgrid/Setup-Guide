@@ -52,6 +52,11 @@ Use the following link and template to setup native opencv project for android,
 
 https://github.com/VlSomers/native-opencv-android-template
 
+#### Sample OpenCV DNN Setup
+
+https://github.com/ivangrov/Android-Deep-Learning-with-OpenCV
+
+
 ### Dlib
 
 Get dlib master source code from github and compile with this script after changing paths, 
