@@ -59,7 +59,11 @@ https://github.com/ivangrov/Android-Deep-Learning-with-OpenCV
 
 ### Dlib
 
-Get dlib master source code from github and compile with this script after changing paths, 
+Download dlib from github repo and extract to `C:` drive such that extracted path is `C:\dlib\dlib-master\`.
+
+Use this [dlib powershell script](dlib-android-setup.ps1) to copy dlib directly into the project. Must change the absolute paths before running the script. Change `$CmakeBinPath`, `$NDK`, `$PROJECT_PATH`, `$DLIB_PATH`.
+
+Further detail on script and execution procedure, 
 
 https://stackoverflow.com/questions/60548479/setting-up-dlib-for-android-studio/60550358#60550358
 
