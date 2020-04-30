@@ -18,7 +18,7 @@ Download the installer or zip version of cmake. Dlib 19.19 from official website
 
 ## Implementable Projects
 
-These can be implemented in both pc and android.
+Most or all of these can be implemented in both pc and android.
 
 | Name | Link |
 | --- | --- |
@@ -28,6 +28,9 @@ These can be implemented in both pc and android.
 | Object Tracking | https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/ |
 | Facial Landmarks with Dlib | http://dlib.net/face_landmark_detection_ex.cpp.html |
 | Facial Landmarks with OpenCV Contrib | https://docs.opencv.org/master/de/d27/tutorial_table_of_content_face.html <br> https://github.com/kurnianggoro/GSOC2017 |
+| YoloFace face detection | https://github.com/sthanhng/yoloface |
+
+
 
 ## Android
 
