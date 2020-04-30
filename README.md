@@ -61,7 +61,16 @@ https://github.com/ivangrov/Android-Deep-Learning-with-OpenCV
 
 Download dlib from github repo and extract to `C:` drive such that extracted path is `C:\dlib\dlib-master\`.
 
-Use this [dlib powershell script](dlib-android-setup.ps1) to copy dlib directly into the project. Must change the absolute paths before running the script. Change `$CmakeBinPath`, `$NDK`, `$PROJECT_PATH`, `$DLIB_PATH`.
+Use this [dlib powershell script](dlib-android-setup.ps1) to copy dlib directly into the project. Must change the absolute paths before running the script. Change `$CMAKE_BIN_PATH`, `$NDK`, `$PROJECT_PATH`, `$DLIB_PATH`.
+
+#### Execution Method
+
+Paste the script in `C:\dlib\` and run powershell as administrator. Paste `set-location C:\dlib\dlib-master\` and press enter to go into that folder. Run `Set-ExecutionPolicy RemoteSigned` and press `A`. 
+
+Next, paste `& "C:\dlib\dlib-android-setup.ps1` and enter to start compiling and copying files to your project. Must change paths accordingly in script before execution.
+
+After all dlib files are copied to android project, paste `Set-ExecutionPolicy Restricted` to powershell and press `A`.
+
 
 Further detail on script and execution procedure, 
 
