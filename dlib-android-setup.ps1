@@ -34,7 +34,7 @@ $STRIPPERS = @{
 $MIN_SDK = 24
 
 # Android project path: REPLACE WITH YOUR PROJECT PATH!
-$PROJECT_PATH = 'C:\Users\computer\AndroidStudioProjects\BontonOfflineFaceRecognition'
+$PROJECT_PATH = 'C:\Users\computer\AndroidStudioProjects\YourAnroidProjectName'
 
 # Directory for storing native libraries
 $NATIVE_DIR = "$PROJECT_PATH\app\src\main\cppLibs"
