@@ -18,6 +18,7 @@ Download the installer or zip version of cmake. Dlib 19.19 from official website
 
 ## Implementable Projects
 
+These can be implemented in both pc and android.
 
 | Name | Link |
 | --- | --- |
