@@ -29,7 +29,7 @@ Most or all of these can be implemented in both pc and android.
 | Facial Landmarks with Dlib | http://dlib.net/face_landmark_detection_ex.cpp.html |
 | Facial Landmarks with OpenCV Contrib | https://docs.opencv.org/master/de/d27/tutorial_table_of_content_face.html <br> https://github.com/kurnianggoro/GSOC2017 |
 | YoloFace face detection | https://github.com/sthanhng/yoloface |
-| OpenCV DNN Object Detection and Localizaiton | Pretrained darknet yolo (cfg, weights), Caffe (prototxt, caffemodel)  |
+| OpenCV DNN Object Detection and Localizaiton | Pretrained darknet yolo (cfg, weights), Caffe (prototxt, caffemodel) etc. |
 
 
 ## Android
