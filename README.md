@@ -25,11 +25,15 @@ These can be implemented in both pc and android.
 | Very fast and accurate rotation-invariant face detector | https://github.com/MagicJackStone/FaceKit/tree/master/PCN |
 | Ultra light face detector OpenCV DNN | https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB/tree/master/opencv_dnn |
 | Ultra light face detector NCNN | https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB/tree/master/ncnn/src |
-
+| Object Tracking | https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/ |
+| Facial Landmarks with Dlib | http://dlib.net/face_landmark_detection_ex.cpp.html |
+| Facial Landmarks with OpenCV Contrib | https://docs.opencv.org/master/de/d27/tutorial_table_of_content_face.html <br> https://github.com/kurnianggoro/GSOC2017 |
 
 ## Android
 
 Note in order to make latest version of all three working in same project the easiest way for beginner is to setup opencv contrib/opencv, next setup dlib after changing target project name, cmake, ndk paths, finally setup ncnn.
+
+`NOTE:` Must create C++ android project to make these all work together.
 
 ### OpenCV Contrib
 
