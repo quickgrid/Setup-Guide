@@ -48,7 +48,7 @@ But easiest way at the moment is download prebuilt version of latest opencv cont
 
 https://pullrequest.opencv.org/buildbot/export/opencv_releases/master-contrib_pack-contrib-android/
 
-Use the following link and template to setup native opencv project for android,
+Use the following link and template to setup native opencv project for android. Instead of using opencv android from their site just replace it with opencv contrib from the link above.
 
 https://github.com/VlSomers/native-opencv-android-template
 
