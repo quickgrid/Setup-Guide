@@ -1,13 +1,13 @@
 # Author: Luca Anzalone
-# Modified by Asif Ahmed to fix Ninja error
+# Modified by Asif Ahmed to fix ninja and path error, opencv is not used here
 
 # -----------------------------------------------------------------------------
 # -- DLIB FOR ANDROID: setup script
 # -----------------------------------------------------------------------------
 
 # Android-cmake path: REPLACE WITH YOUR CMAKE PATH!
-$CmakeBinPath = 'C:\Users\computer\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin'
-$AndroidCmake = '$CmakeBinPath\cmake.exe'
+$CMAKE_BIN_PATH = 'C:\Users\computer\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin'
+$AndroidCmake = "$CMAKE_BIN_PATH\cmake.exe"
 
 # Android-ndk path: REPLACE WITH YOUR NDK PATH!
 if (Get-Variable 'ANDROID_NDK' -Scope Global -ErrorAction 'Ignore') {
@@ -34,7 +34,7 @@ $STRIPPERS = @{
 $MIN_SDK = 24
 
 # Android project path: REPLACE WITH YOUR PROJECT PATH!
-$PROJECT_PATH = 'C:\Users\computer\AndroidStudioProjects\DriverDrowsiness1'
+$PROJECT_PATH = 'C:\Users\computer\AndroidStudioProjects\BontonOfflineFaceRecognition'
 
 # Directory for storing native libraries
 $NATIVE_DIR = "$PROJECT_PATH\app\src\main\cppLibs"
@@ -90,7 +90,7 @@ function Compile-Dlib {
                 "-DANDROID_NDK=$NDK",
                 "-DCMAKE_TOOLCHAIN_FILE=$TOOLCHAIN",
 				"-GNinja"
-                "-DCMAKE_MAKE_PROGRAM=$CmakeBinPath\ninja.exe",
+                "-DCMAKE_MAKE_PROGRAM=$CMAKE_BIN_PATH\ninja.exe",
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions",
                 "-DCMAKE_C_FLAGS=-O3",
