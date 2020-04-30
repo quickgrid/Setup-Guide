@@ -18,6 +18,14 @@ Download the installer or zip version of cmake. Dlib 19.19 from official website
 
 ## Android
 
+Note in order to make latest version of all three working in same project the easiest way for beginner is to setup opencv contrib/opencv, next setup dlib after changing target project name, cmake, ndk paths, finally setup ncnn.
+
+### Implementable Projects
+
+- Very fast and accurate rotation-invariant face detector, https://github.com/MagicJackStone/FaceKit/tree/master/PCN
+- Ultra light face detector OpenCV DNN, https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB/tree/master/opencv_dnn
+- Ultra light face detector NCNN, https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB/tree/master/ncnn/src
+
 ### OpenCV Contrib
 
 Build instructions for opencv contrib,
