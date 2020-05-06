@@ -99,6 +99,16 @@ For `Visual Studio 2019` Use opencv_worldXXX.lib, Ex: `opencv_world430.lib` for 
 
 ### Dlib
 
+Compile instructions,
+
+http://dlib.net/compile.html
+
+For use cmake to configure and Visual Studio compile ALL_BUILD dlib in release x64 to generate dlib_(...).lib.
+
+In desired project set vc++ include directories, include path to dlib master downloaded from master to extracted folder. Set library directoies to generated `dlib.lib`. Copy `dlib/all/source.cpp` to visual studio source files folder where other c++ codes reside.
+
+To enable jpg support set C/C++ > General > Additional Include Directories, to extracted dlib folder something like, `C:\dlib-master\dlib\external\libjpeg`.  Set C/C++ > Preprocessor > Preprocessor definitions, to `CRT_SECURE_NO_WARNINGS` and `DLIB_JPEG_SUPPORT` for jpg support.
+
 ### NCNN
 
 https://github.com/Tencent/ncnn/wiki/how-to-build
