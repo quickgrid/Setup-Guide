@@ -122,6 +122,8 @@ Now press configure and again configure if all looks correct. Next, click genera
 
 ### Minimal Example
 
+https://stackoverflow.com/questions/52760801/cmake-building-for-windows-clang-cl-using-ninja-generator
+
 #### CMakeLists.txt
 
 ```
