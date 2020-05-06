@@ -102,3 +102,46 @@ For `Visual Studio 2019` Use opencv_worldXXX.lib, Ex: `opencv_world430.lib` for 
 ### NCNN
 
 https://github.com/Tencent/ncnn/wiki/how-to-build
+
+
+## Windows 10 LLVM Clang, Ninja, CMake Generate C++ Executable
+
+### Tool Links
+
+Ninja Windows Release, https://github.com/ninja-build/ninja/releases
+LLVM Download, https://releases.llvm.org/download.html
+
+### Process
+
+Make a build folder to store generated files. In cmake set this path. Also set path for source `C++` folder. Click configure and select generator. Choose Ninja and tick specify native compilers. Set LLVM bin clang.exe and clang++.exe for C and C++.
+
+There will be error that `CMAKE_MAKE_PROGRAM-NOTFOUND`. Browse to directory where ninja release was extracted and select `ninja.exe`. It should also be possible (not tested) to use ninja.exe that comes with android studio setup in android cmake folder.
+
+Now press configure and again configure if all looks correct. Next, click generate. Open cmd navigate to project source folder and run `ninja.exe`. If not is system path then specify location as, "C:\ninja-win\ninja.exe" on command prompt.
+
+### Minimal Example
+
+#### CMakeLists.txt
+
+```
+cmake_minimum_required(VERSION 3.12)
+project(hello_world)
+add_executable(${PROJECT_NAME} main.cpp)
+```
+
+#### main.cpp
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "HELLO" << "\n";
+
+    cin.get();
+
+    return 0;
+}
+```
