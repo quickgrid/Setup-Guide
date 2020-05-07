@@ -109,6 +109,8 @@ In desired project set vc++ include directories, include path to dlib master dow
 
 To enable jpg support set C/C++ > General > Additional Include Directories, to extracted dlib folder something like, `C:\dlib-master\dlib\external\libjpeg`.  Set C/C++ > Preprocessor > Preprocessor definitions, to `CRT_SECURE_NO_WARNINGS` and `DLIB_JPEG_SUPPORT` for jpg support.
 
+Example for testing, http://dlib.net/dnn_face_recognition_ex.cpp.html
+
 ### NCNN
 
 https://github.com/Tencent/ncnn/wiki/how-to-build
