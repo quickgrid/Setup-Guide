@@ -67,7 +67,7 @@ Use this [dlib powershell script](dlib-android-setup.ps1) to copy dlib directly 
 
 Paste the script in `C:\dlib\` and run powershell as administrator. Paste `set-location C:\dlib\dlib-master\` and press enter to go into that folder. Run `Set-ExecutionPolicy RemoteSigned` and press `A`. 
 
-Next, paste `& "C:\dlib\dlib-android-setup.ps1` and enter to start compiling and copying files to your project. Must change paths accordingly in script before execution.
+Next, paste `& "C:\dlib\dlib-android-setup.ps1"` and enter to start compiling and copying files to your project. Must change paths accordingly in script before execution.
 
 After all dlib files are copied to android project, paste `Set-ExecutionPolicy Restricted` to powershell and press `A`.
 
