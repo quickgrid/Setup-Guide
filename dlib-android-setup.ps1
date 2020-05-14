@@ -1,5 +1,6 @@
 # Author: Luca Anzalone
 # Modified by Asif Ahmed to fix ninja and path error, opencv is not used here
+# MUST CHANGE $CMAKE_BIN_PATH, $NDK, $PROJECT_PATH, $DLIB_PATH BASED ON NEEDS
 
 # -----------------------------------------------------------------------------
 # -- DLIB FOR ANDROID: setup script
