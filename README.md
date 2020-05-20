@@ -233,4 +233,7 @@ In the demo cpp code set path to image file correctly before running. Run the co
 
 Also paste, `openpose.dll` from build folder. Search for it not found. Now each sample codes should run directly with image/video path change.
 
+#### Face Keypoint Sample Image
+
+https://github.com/quickgrid/Build-Guide/blob/master/openpose_face_keypoints_sample.jpg
 
