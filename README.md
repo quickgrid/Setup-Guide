@@ -1,6 +1,7 @@
 # Build-Guide
 A build and setup guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows C++, Python and Android C++, Java etc.
 
+
 ## Tools Required
 
 Download the installer or zip version of cmake. Dlib 19.19 from official website had bug with opencv `cv_image` which is fixed on github source.
@@ -15,6 +16,7 @@ Download the installer or zip version of cmake. Dlib 19.19 from official website
 - OpenCV source, https://github.com/opencv/opencv
 - OpenCV contrib source, https://github.com/opencv/opencv_contrib
 
+<br>
 
 ## Projects Tested
 
@@ -31,6 +33,7 @@ These are some of the projects I have tested. Most or all of these can be implem
 | YoloFace face detection | https://github.com/sthanhng/yoloface |
 | OpenCV DNN Object Detection and Localizaiton | Pretrained darknet yolo (cfg, weights), Caffe (prototxt, caffemodel) etc. |
 
+<br>
 
 ## Android
 
@@ -91,6 +94,8 @@ https://github.com/Tencent/ncnn/releases
 
 Download vulkan library for GPU support.
 
+<br>
+
 ## Windows
 
 ### OpenCV Contrib
@@ -115,6 +120,7 @@ Example for testing, http://dlib.net/dnn_face_recognition_ex.cpp.html
 
 https://github.com/Tencent/ncnn/wiki/how-to-build
 
+<br>
 
 ## Windows 10 LLVM Clang, Ninja, CMake Generate C++ Executable
 
@@ -161,6 +167,7 @@ int main(){
 }
 ```
 
+<br>
 
 ## Windows 10 CMU OPENPOSE Setup Visual Studio 2019, CMake, Nvidia GPU
 
@@ -190,5 +197,38 @@ If there is any error it has to with path to `caffe`, `caffe3rdparty`, `opencv`,
 
 Open build folder now and open the `*.sln` file with visual studio. Change configuration to `Release` and in solution explorer run `ALL_BUILD` target or run `Local Windows Debugger` directly.
 
+In order to run openpose samples create a new c++ empty project in VS2019. Set configuration to `Release`. Add desired sample to run from, https://github.com/CMU-Perceptual-Computing-Lab/openpose/tree/master/examples/tutorial_api_cpp to `Source Files` folder in project.
+
+Next step in to add `*.dll`, `*.lib` files and necessary include folders via project `Properties`. In VC++ include directories set path to all include folder in openpose-master source folders. Ex:
+
+`C:\openpose-master\include`
+`C:\openpose-master\3rdparty\windows\opencv\include`
+
+Do this for all include folder in 3rdparty folder. Next, set Library directories,
+
+`C:\openpose-master\build\src\openpose\Release`
+`C:\openpose-master\3rdparty\windows\opencv\x64\vc15\lib`
+
+Do same for all lib folders in 3rdparty directory. Next, write name of each `*.lib` files in `Linked > Input > Additional Dependencies` such as, 
+
+```
+freeglut.lib
+glog.lib
+gflags.lib
+caffe.lib
+caffeproto.lib
+opencv_world420.lib
+openpose.lib
+```
+
+(Optional) Use the `d` versions for debug config if debugging config is set otherwise use above for release.
+
+Copy models folder from openpose source to VS2019 solution folder. It will have caffemodels and prototxt but caffemodels are placeholder. If batch was used to run then it should have everything ready. Otherwise paste the downloaded caffe models here for different tasks which were downloaded with `*.bat` links manually. 
+
+In the demo cpp code set path to image file correctly before running. Run the code and it will give error that `*.dll` not found. In solution x64 folder where `*.exe` is found paste the dll files from here,
+
+`C:\openpose-master\build\bin` 
+
+Also paste, `openpose.dll` from build folder. Search for it not found. Not each sample codes should run directly with image/video path change.
 
 
