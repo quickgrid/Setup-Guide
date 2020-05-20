@@ -185,21 +185,21 @@ https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/install
 
 ### Build Process
 
-Ensure CUDA, cuDNN is setup in system properly.
+Ensure CUDA, cuDNN is setup in system properly. In my case CUDA 10.2 and cuDNN 7.6.5 for 10.2 x64 works.
 
-Download the source from github as ZIP, https://github.com/CMU-Perceptual-Computing-Lab/openpose. Maybe git recursive clone is better. Extract it a folder. 
+Download the source from github as ZIP, https://github.com/CMU-Perceptual-Computing-Lab/openpose. Maybe git recursive clone is better. Extract it a folder. Ex: `C:\openpose-master`.
 
-If 3rd party dependencies are not in extracted folder. Then download them separately and extract to approprite folder. Ex: `pybind11`, `caffe`.
+If 3rd party dependencies are not in extracted folder. Then download those project zip separately and extract to approprite folder. Ex: `pybind11`, `caffe`.
 
-In `openpose-master\3rdparty\windows` use the `bat` files to download dependencies. If download is slow, open the batch files and manually download each zip files with given url and extract to folders `caffe`, `caffe3rdparty`, `opencv`, `freeglut`.
+In `openpose-master\3rdparty\windows` use the `bat` files to download dependencies. If download is slow, open the batch files and manually download each zip files with given url and extract to folders `caffe`, `caffe3rdparty`, `opencv`, `freeglut`. For manual downloads the downloaded files may have extra characters added to them, so change their name as above.
 
-Create a new folder inside it named `build`. Point to source and build folder in CMake GUI. Press `configure` and choose visual studio 2019 as generator and platform as x64 then press finish. Wait for cmake to configure. CMake should automatically find everything. Next, press configure again and press generate. It should not give any errors. 
+Create a new folder inside `openpose-master` named `build`. Point to source folder(`C:\openpose-master`) and build(`C:\openpose-master\build`) folder in CMake GUI. Press `configure` and choose visual studio 2019 as generator and platform as x64 then press finish. Wait for cmake to configure. CMake should automatically find everything. Next, press configure again and press generate. It should not give any errors. 
 
 If there is any error it has to with path to `caffe`, `caffe3rdparty`, `opencv`, `freeglut`, or they were not downloaded properly. If they are in custom path set each or their value until `generate` button no longer gives any error.
 
 Open build folder now and open the `*.sln` file with visual studio. Change configuration to `Release` and in solution explorer run `ALL_BUILD` target or run `Local Windows Debugger` directly.
 
-In order to run openpose samples create a new c++ empty project in VS2019. Set configuration to `Release`. Add desired sample to run from, https://github.com/CMU-Perceptual-Computing-Lab/openpose/tree/master/examples/tutorial_api_cpp to `Source Files` folder in project.
+In order to run openpose samples create a new c++ empty project in VS2019. Set configuration to `Release`. Add desired sample cpp code to run from, https://github.com/CMU-Perceptual-Computing-Lab/openpose/tree/master/examples/tutorial_api_cpp to `Source Files` folder in project.
 
 Next step in to add `*.dll`, `*.lib` files and necessary include folders via project `Properties`. In VC++ include directories, set path to all include folder in openpose-master source folders. Ex:
 
@@ -211,7 +211,7 @@ Do this for all include folder in 3rdparty folder. Next, set Library directories
 `C:\openpose-master\build\src\openpose\Release`
 `C:\openpose-master\3rdparty\windows\opencv\x64\vc15\lib`
 
-Do same for all lib folders in 3rdparty directory. Next, write name of each `*.lib` files in `Linked > Input > Additional Dependencies` such as, 
+Do same for all lib folders in 3rdparty directory. Next, write name of each `*.lib` files in `Linker > Input > Additional Dependencies` such as, 
 
 ```
 freeglut.lib
@@ -223,11 +223,11 @@ opencv_world420.lib
 openpose.lib
 ```
 
-(Optional) Use the `d` versions for debug config if debugging config is set otherwise use above for release.
+(Optional) Use the `d` suffix versions for debug config if debugging config is set, otherwise use above for release.
 
-Copy models folder from openpose source to VS2019 solution folder. It will have caffemodels and prototxt but caffemodels are placeholder. If batch was used to run then it should have everything ready. Otherwise paste the downloaded caffe models here for different tasks which were downloaded with `*.bat` links manually. 
+Copy models folder from openpose source to VS2019 solution project folder. It will have caffemodels and prototxt but caffemodels are placeholder. If batch was used to run then it should have everything ready. Otherwise paste the downloaded caffe models here for different tasks which were downloaded with `*.bat` links manually. 
 
-In the demo cpp code set path to image file correctly before running. Run the code and it will give error that `*.dll` not found. In solution x64 folder where `*.exe` is found paste the dll files from here,
+In the demo cpp code set path to image file correctly before running. Run the code and it will give error that `*.dll` not found. In Visual Studio solution x64 folder in explorer where `*.exe` is found, paste the dll files from here,
 
 `C:\openpose-master\build\bin` 
 
