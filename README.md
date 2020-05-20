@@ -203,13 +203,17 @@ In order to run openpose samples create a new c++ empty project in VS2019. Set c
 
 Next step in to add `*.dll`, `*.lib` files and necessary include folders via project `Properties`. In VC++ include directories, set path to all include folder in openpose-master source folders. Ex:
 
-`C:\openpose-master\include`
-`C:\openpose-master\3rdparty\windows\opencv\include`
+```
+C:\openpose-master\include
+C:\openpose-master\3rdparty\windows\opencv\include
+```
 
 Do this for all include folder in 3rdparty folder. Next, set Library directories,
 
-`C:\openpose-master\build\src\openpose\Release`
-`C:\openpose-master\3rdparty\windows\opencv\x64\vc15\lib`
+```
+C:\openpose-master\build\src\openpose\Release
+C:\openpose-master\3rdparty\windows\opencv\x64\vc15\lib
+```
 
 Do same for all lib folders in 3rdparty directory. Next, write name of each `*.lib` files in `Linker > Input > Additional Dependencies` such as, 
 
