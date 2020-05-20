@@ -160,3 +160,35 @@ int main(){
     return 0;
 }
 ```
+
+
+## Windows 10 CMU OPENPOSE Setup Visual Studio 2019, CMake, Nvidia GPU
+
+This setup is quite `complex`.
+
+### Prerequisite
+
+First read these carefully,
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose#installation-reinstallation-and-uninstallation
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/prerequisites.md
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation.md
+
+### Build Process
+
+Download the source from github as ZIP, https://github.com/CMU-Perceptual-Computing-Lab/openpose. Maybe git recursive clone is better. Extract it a folder. 
+
+If 3rd party dependencies are not in extracted folder. Then download them separately and extract to approprite folder. Ex: `pybind11`, `caffe`.
+
+In `openpose-master\3rdparty\windows` use the `bat` files to download dependencies. If download is slow, open the batch files and manually download each zip files with given url and extract to folders `caffe`, `caffe3rdparty`, `opencv`, `freeglut`.
+
+Create a new folder inside it named `build`. Point to source and build folder in CMake GUI. Press `configure` and choose visual studio 2019 as generator and platform as x64 then press finish. Wait for cmake to configure. CMake should automatically find everything. Next, press configure again and press generate. It should not give any errors. 
+
+If there is any error it has to with path to `caffe`, `caffe3rdparty`, `opencv`, `freeglut`, or they were not downloaded properly. If they are in custom path set each or their value until `generate` button no longer gives any error.
+
+Open build folder now and open the `*.sln` file with visual studio. Change configuration to `Release` and in solution explorer run `ALL_BUILD` target or run `Local Windows Debugger` directly.
+
+
+
