@@ -169,7 +169,7 @@ int main(){
 
 <br>
 
-## Windows 10 CMU OPENPOSE Setup Visual Studio 2019, CMake, Nvidia GPU
+## Windows 10 CMU `openpose` Setup Visual Studio 2019, CMake, Nvidia GPU
 
 This setup is quite `complex`.
 
