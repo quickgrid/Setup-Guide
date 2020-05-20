@@ -201,7 +201,7 @@ Open build folder now and open the `*.sln` file with visual studio. Change confi
 
 In order to run openpose samples create a new c++ empty project in VS2019. Set configuration to `Release`. Add desired sample to run from, https://github.com/CMU-Perceptual-Computing-Lab/openpose/tree/master/examples/tutorial_api_cpp to `Source Files` folder in project.
 
-Next step in to add `*.dll`, `*.lib` files and necessary include folders via project `Properties`. In VC++ include directories set path to all include folder in openpose-master source folders. Ex:
+Next step in to add `*.dll`, `*.lib` files and necessary include folders via project `Properties`. In VC++ include directories, set path to all include folder in openpose-master source folders. Ex:
 
 `C:\openpose-master\include`
 `C:\openpose-master\3rdparty\windows\opencv\include`
