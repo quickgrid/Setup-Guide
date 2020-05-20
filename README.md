@@ -185,6 +185,8 @@ https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/install
 
 ### Build Process
 
+Ensure CUDA, cuDNN is setup in system properly.
+
 Download the source from github as ZIP, https://github.com/CMU-Perceptual-Computing-Lab/openpose. Maybe git recursive clone is better. Extract it a folder. 
 
 If 3rd party dependencies are not in extracted folder. Then download them separately and extract to approprite folder. Ex: `pybind11`, `caffe`.
@@ -229,6 +231,6 @@ In the demo cpp code set path to image file correctly before running. Run the co
 
 `C:\openpose-master\build\bin` 
 
-Also paste, `openpose.dll` from build folder. Search for it not found. Not each sample codes should run directly with image/video path change.
+Also paste, `openpose.dll` from build folder. Search for it not found. Now each sample codes should run directly with image/video path change.
 
 
