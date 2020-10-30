@@ -7,7 +7,7 @@ A build and setup guide for various libraries such as Dlib, OpenCV, NCNN etc for
 Download the installer or zip version of cmake. Dlib 19.19 from official website had bug with opencv `cv_image` which is fixed on github source.
 
 - CMake, https://cmake.org/download/
-- Visual Studio 2019 Community Edition,
+- Visual Studio 2019 Community Edition
 - Vulkan SDK, https://vulkan.lunarg.com/sdk/home
 - Cuda and cuDNN with `CUDA_PATH` environment variable set
 - Dlib source code from github, https://github.com/davisking/dlib
@@ -98,7 +98,19 @@ Download vulkan library for GPU support.
 
 ## Windows
 
-### OpenCV Contrib
+### OpenCV Contrib Windows Build From Source For Python Anaconda
+
+Download `opencv`, `opencv_contrib`, `cmake`. Extract and paste both into a folder for path, ex: `opencv-compilation`. Use `cmake-gui` browse source to point to opencv folder and click configure. Find `OPENCV_EXTRA_MODULES_PATH` and point to opencv_contrib modules folder. Point `PYTHON3_` variables to correct conda environment path. Untick `BUILD_SHARED_LIBS`, click configure and generate. It may be necessary to have numpy installed beforehand. Unchecking unncessary modules will speed up process if python is the only target. 
+
+This will generate `build` folder inside `opencv-compilation`. Open `OpenCV.sln`, choose `release` configuration `x64`. In solution explorer open `CMakeTargets`, right click on `ALL_BUILD` and click build. After compilation done copy `cv2.****.pyd` file from `opencv-compilation\build\lib\python3\Release` to Anaconda or Miniconda custom enviroment. For examples, I used miniconda3 and the copy location for `pyd` file was `C:\Users\...\miniconda3\envs\mycustomenv\Lib\site-packages`.
+
+Check installation by activating correct environment and running,
+```
+import cv2
+print(cv2.__version__)
+```
+
+### OpenCV Contrib Application
 
 For `Visual Studio 2019` Use opencv_worldXXX.lib, Ex: `opencv_world430.lib` for release configuration and `opencv_world430d.lib` for debug configuration. If opencv is extracted to `C:` then it can be fould in `C:\opencv\build\x64\vc15\lib`.
 
