@@ -1,4 +1,4 @@
-# Build-Guide
+# Setup-Guide
 A build and setup guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows C++, Python and Android C++, Java etc.
 
 
@@ -253,3 +253,21 @@ Also paste, `openpose.dll` from build folder. Search for it not found. Now each 
 
 https://github.com/quickgrid/Build-Guide/blob/master/openpose_face_keypoints_sample.jpg
 
+<br>
+
+## AWS EC2 Ubuntu GUI from Windows
+
+### Required
+
+TightVNC, https://www.tightvnc.com/download.php
+Putty, https://www.putty.org/
+
+### Instructions
+
+Use `Shift + Insert` key to paste copied text from windows clipboard to Putty ubuntu terminal `vim`. Use `Shift + :` for inserting commands, `:q!` for exiting without saving. Use AWS `Public IPv4 DNS` in Putty hostname. Use `puttygen` to convert `pem` file to `ppk` to be used by putty, click `save private key`. In putty `SSH > Auth` section browse to `ppk` file and click open to connect. 
+
+Use `ubuntu` as username for default ubuntu image. Instructions for installing and connecting to GUI is available here.  
+
+https://ubuntu.com/tutorials/ubuntu-desktop-aws
+
+It will also work for windows host. Paste all the required commands in putty terminal. If all went correctly use the `IPv4 DNS` address appended with `:1` to connect to ubuntu GUI from tightVNC. Make sure to set up inbound rule for VNC access.
