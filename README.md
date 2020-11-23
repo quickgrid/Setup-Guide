@@ -265,6 +265,8 @@ RealVNC Viewer (Alternative to TightVNC), https://www.realvnc.com/en/
 
 Putty, https://www.putty.org/
 
+WinSCP , https://winscp.net/eng/index.php
+
 ### Instructions
 
 Use `Shift + Insert` key to paste copied text from windows clipboard to Putty ubuntu terminal `vim`. Use `Shift + :` for inserting commands, `:q!` for exiting without saving. Use AWS `Public IPv4 DNS` in Putty hostname. Use `puttygen` to convert `pem` file to `ppk` to be used by putty, click `save private key`. In putty `SSH > Auth` section browse to `ppk` file and click open to connect. 
@@ -331,3 +333,8 @@ Build instructions here, https://www.tensorflow.org/lite/guide/build_android.
 To fix issue with `Got permission denied while trying to connect to the docker daemon socket at unix:///var/run/docker.sock: .....` use the command `sudo chmod 666 /var/run/docker.sock`.
 
 Within docker type `ls` to get folder list and navigate to `tensorflow_src` with `cd tensorflow_src`. Here, type `./configure` to configure tensorflow build.
+
+
+### File Transfer from EC2 to Local System
+
+Use `WinSCP` to download files from aws ec2 to local system. Download the android tensorflow `aar` files with this to put into android project.
