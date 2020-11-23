@@ -255,7 +255,7 @@ https://github.com/quickgrid/Build-Guide/blob/master/openpose_face_keypoints_sam
 
 <br>
 
-## AWS EC2 Ubuntu GUI from Windows
+## AWS EC2 Ubuntu GUI, CLI from Windows for Tensorflow Lite Build
 
 ### Required
 
