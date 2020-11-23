@@ -272,3 +272,9 @@ Use `ubuntu` as username for default ubuntu image. Instructions for installing a
 https://ubuntu.com/tutorials/ubuntu-desktop-aws
 
 It will also work for windows host. Paste all the required commands in putty terminal. If all went correctly use the `IPv4 DNS` address appended with `:1` to connect to ubuntu GUI from tightVNC. Make sure to set up inbound rule for VNC access.
+
+### Setup for Tensorflow Lite Android build on EC2
+
+Build instructions here, https://www.tensorflow.org/lite/guide/build_android.
+
+To fix issue with `Got permission denied while trying to connect to the docker daemon socket at unix:///var/run/docker.sock: .....` use the command `sudo chmod 666 var/run/docker.sock`.
