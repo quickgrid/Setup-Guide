@@ -326,4 +326,4 @@ Build instructions here, https://www.tensorflow.org/lite/guide/build_android.
 
 To fix issue with `Got permission denied while trying to connect to the docker daemon socket at unix:///var/run/docker.sock: .....` use the command `sudo chmod 666 var/run/docker.sock`.
 
-Within docker type `ls` to get folder list and navigate to `tensorflow_src` with `cd tensorflow_src`.
+Within docker type `ls` to get folder list and navigate to `tensorflow_src` with `cd tensorflow_src`. Here, type `./configure` to configure tensorflow build.
