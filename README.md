@@ -338,3 +338,5 @@ Within docker type `ls` to get folder list and navigate to `tensorflow_src` with
 ### File Transfer from EC2 to Local System
 
 Use `WinSCP` to download files from aws ec2 to local system. Download the android tensorflow `aar` files with this to put into android project.
+
+WinSCP AWS EC2 instructions, https://winscp.net/eng/docs/guide_amazon_ec2.
