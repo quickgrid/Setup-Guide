@@ -275,6 +275,8 @@ https://ubuntu.com/tutorials/ubuntu-desktop-aws
 
 It will also work for windows host. Paste all the required commands in putty terminal. If all went correctly use the `IPv4 DNS` address appended with `:1` to connect to ubuntu GUI from tightVNC. Make sure to set up inbound rule for VNC access.
 
+Use `df -BM` for checking free space.
+
 ### Docker Installation
 
 Run these commands one by one on `putty terminal`. Tested on ubuntu `18.04` ec2 instance. Full instructions here, https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04.
