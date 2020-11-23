@@ -259,7 +259,9 @@ https://github.com/quickgrid/Build-Guide/blob/master/openpose_face_keypoints_sam
 
 ### Required
 
-TightVNC, https://www.tightvnc.com/download.php
+TightVNC Viewer, https://www.tightvnc.com/download.php
+
+RealVNC Viewer (Alternative to TightVNC), https://www.realvnc.com/en/
 
 Putty, https://www.putty.org/
 
