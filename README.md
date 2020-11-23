@@ -273,7 +273,54 @@ https://ubuntu.com/tutorials/ubuntu-desktop-aws
 
 It will also work for windows host. Paste all the required commands in putty terminal. If all went correctly use the `IPv4 DNS` address appended with `:1` to connect to ubuntu GUI from tightVNC. Make sure to set up inbound rule for VNC access.
 
-### Setup for Tensorflow Lite Android build on EC2
+### Docker Installation
+
+Run these commands one by one on `putty terminal`. Tested on ubuntu `18.04` ec2 instance. Full instructions here, https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04.
+
+```
+sudo apt update
+```
+
+```
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+```
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
+```
+
+```
+sudo apt update
+```
+
+```
+sudo apt-get install docker-ce
+```
+
+```
+docker --version
+```
+
+```
+sudo systemctl start docker
+```
+
+```
+sudo systemctl enable docker
+```
+
+```
+sudo systemctl status docker
+```
+
+Now, docker is ready for android tensorflow lite build.
+
+
+### Setup for Tensorflow Lite Android Build on EC2
 
 Build instructions here, https://www.tensorflow.org/lite/guide/build_android.
 
