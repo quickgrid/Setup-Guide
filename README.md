@@ -334,7 +334,7 @@ To fix issue with `Got permission denied while trying to connect to the docker d
 
 Within docker type `ls` to get folder list and navigate to `tensorflow_src` with `cd tensorflow_src`. Here, type `./configure` to configure tensorflow build.
 
-Enter an exited docker container with, `docker start 7263550e2520 && docker attach 7263550e2520`. To start the last one use, `docker start \`docker ps -q -l\` && docker attach \`docker ps -q -l\``.
+Enter an exited docker container with, `docker start 7263550e2520 && docker attach 7263550e2520`. To start the last one use, ``docker start `docker ps -q -l` && docker attach `docker ps -q -l` ``.
 
 To get list of stopped containers with information use, `docker ps -a`. 
 
