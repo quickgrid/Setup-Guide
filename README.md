@@ -342,4 +342,6 @@ To get list of stopped containers with information use, `docker ps -a`.
 
 Use `WinSCP` to download files from aws ec2 to local system. Download the android tensorflow `aar` files with this to put into android project.
 
+Use `ppk` generated with `puttygen` in WinSCP advanced authentication. Log in to server with user name.
+
 WinSCP AWS EC2 instructions, https://winscp.net/eng/docs/guide_amazon_ec2.
