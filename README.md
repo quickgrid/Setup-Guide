@@ -345,3 +345,13 @@ Use `WinSCP` to download files from aws ec2 to local system. Download the androi
 Use `ppk` generated with `puttygen` in WinSCP advanced authentication. Log in to server with user name.
 
 WinSCP AWS EC2 instructions, https://winscp.net/eng/docs/guide_amazon_ec2.
+
+### Keep Terminal Session alive after closing Putty
+
+Use `screen` to detach and run commands. Install with,
+
+`apt-get install screen`
+
+Enter `screen` on terminal and `ctrl + a + d` to detach. Use `screen -ls` for a screen list and `screen -r` to resume single screen. For multiple screens use `screen -r <number>` to attach.
+
+Source, https://www.interserver.net/tips/kb/using-screen-to-attach-and-detach-console-sessions/
