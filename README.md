@@ -355,3 +355,21 @@ Use `screen` to detach and run commands. Install with,
 Enter `screen` on terminal and `ctrl + a + d` to detach. Use `screen -ls` for a screen list and `screen -r` to resume single screen. For multiple screens use `screen -r <number>` to attach.
 
 Source, https://www.interserver.net/tips/kb/using-screen-to-attach-and-detach-console-sessions/
+
+
+### Reduced Size AAR Building Resources
+
+https://github.com/tensorflow/tensorflow/blob/master/.bazelrc
+
+https://docs.bazel.build/versions/master/user-manual.html
+
+https://github.com/tensorflow/tensorflow/issues/35170
+
+https://www.tensorflow.org/lite/guide/ops_select
+
+https://www.tensorflow.org/lite/guide/reduce_binary_size
+
+https://www.tensorflow.org/lite/guide/build_android
+
+https://github.com/tensorflow/tensorflow/blob/v2.3.0/tensorflow/lite/g3doc/guide/ops_select.md
+
