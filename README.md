@@ -181,6 +181,23 @@ int main(){
 
 <br>
 
+## VSCodium Windows C++ Build and Debugging with `g++` and `gdb`
+
+Instructions for setting up c++ build and debugging on windows. For MinGW `gcc, g++, gdb` etc. I used Codeblocks MinGW version where in `bin` folder they are available.
+Sample path is, `{base_path}\codeblocks\MinGW\bin`. Need to have Microsoft `C/C++` extensions installed in vscodium.
+
+https://code.visualstudio.com/docs/cpp/config-mingw
+
+To create workspace add vscodium to path and use `codium .`. Create desired cpp file in the workspace. Next, choose `Terminal > Configure Tasks > Shell:g++.exe build active file`. This will create a `build.json` file and can be run from `Terminal > Run Build Task..`. Next, from `Run > Add Configurations` choose `C++ (GDB/LLDB) > g++.exe build and debug active file`.
+
+Now, set breakpoints and use `Run > Start Debugging`. If there is any error with `preLaunchTask` in `launch.json`, then matching with `task.json` label should fix it.
+
+This method with `cl.exe` works for build, but debugging does not work.
+
+https://code.visualstudio.com/docs/cpp/config-msvc
+
+<br>
+
 ## Windows 10 CMU `openpose` Setup Visual Studio 2019, CMake, Nvidia GPU
 
 This setup is quite `complex`.
