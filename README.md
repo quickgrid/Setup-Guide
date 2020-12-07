@@ -183,7 +183,7 @@ int main(){
 
 ## VSCodium Windows C++ Build and Debugging with `g++` and `gdb`
 
-Instructions for setting up c++ build and debugging on windows. For MinGW `gcc, g++, gdb` etc. I used Codeblocks MinGW version where in `bin` folder they are available.
+Instructions for setting up c++ build and debugging on windows. For MinGW `gcc, g++, gdb` etc. I used Codeblocks MinGW version (may cause problem with `std::thread`) where in `bin` folder they are available.
 Sample path is, `{base_path}\codeblocks\MinGW\bin`. Need to have Microsoft `C/C++` extensions installed in vscodium.
 
 https://code.visualstudio.com/docs/cpp/config-mingw
