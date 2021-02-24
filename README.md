@@ -390,3 +390,18 @@ https://www.tensorflow.org/lite/guide/build_android
 
 https://github.com/tensorflow/tensorflow/blob/v2.3.0/tensorflow/lite/g3doc/guide/ops_select.md
 
+
+
+
+<br>
+
+## YOLO Darknet remove accuracy part from being drawn on predicted output image
+
+Source code link for the part, https://github.com/AlexeyAB/darknet/blob/master/src/image.c
+
+Here, as of current date the code is as below on the `draw_detections_v3` function. Commenting out these two lines will prevent accuracy string from being drawn on `predictions.jpg` image. Similarly class output or both can also be removed but why do so?
+
+```
+sprintf(prob_str, ": %.2f", selected_detections[i].det.prob[selected_detections[i].best_class]);
+strcat(labelstr, prob_str);
+```
