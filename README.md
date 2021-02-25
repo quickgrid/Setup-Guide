@@ -405,3 +405,5 @@ Here, as of current date the code is as below on the `draw_detections_v3` functi
 sprintf(prob_str, ": %.2f", selected_detections[i].det.prob[selected_detections[i].best_class]);
 strcat(labelstr, prob_str);
 ```
+
+This should be done before doing `make`. After `make` command there will be a file named `darknet` within darknet folder.
