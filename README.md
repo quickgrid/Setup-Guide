@@ -407,3 +407,11 @@ strcat(labelstr, prob_str);
 ```
 
 This should be done before doing `make`. After `make` command there will be a file named `darknet` within darknet folder.
+
+<br>
+
+## Setup Darknet training and inference on Sagemaker notebook instance
+
+For GPU support use a gpu instance for example, ml.p3.2xlarge, is 16gb Nvidia V100 gpu. If vpc not required then select `no vpc`. Start the instance and run `Open JupyterLab`. The main reason for writing this is there is an error with `make` when makefile contains `OPENCV=1`. A working but poor solution is set `OPENCV=0` before make, but this will slow down training and inference as pointed out in output log. For kernel `conda_python3` will work. 
+
+TODO: Use `yum` to install opencv on system to see if opencv problem is solved.  
