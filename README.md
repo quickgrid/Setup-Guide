@@ -428,9 +428,13 @@ from PIL import features
 print(features.check("raqm"))
 ```
 
-Windows install instructions, https://stackoverflow.com/questions/62939101/how-to-install-pre-built-pillow-wheel-with-libraqm-dlls-on-windows.
+Windows install instructions, 
 
-Based on answer from, https://stackoverflow.com/questions/66184573/how-do-i-install-libraqm-library-in-google-colab.
+https://stackoverflow.com/questions/62939101/how-to-install-pre-built-pillow-wheel-with-libraqm-dlls-on-windows.
+
+Based on answer from, 
+
+https://stackoverflow.com/questions/66184573/how-do-i-install-libraqm-library-in-google-colab.
 
 This script contains example in google colab,
 
