@@ -417,6 +417,8 @@ For GPU support use a gpu instance for example, ml.p3.2xlarge, is 16gb Nvidia V1
 TODO: Use `yum` to install opencv on system to see if opencv problem is solved.  
 
 
+<br>
+
 ## Python draw complex font text like bengali in image correctly
 
 Easiest option in windows is to download libraqm from here, https://www.lfd.uci.edu/~gohlke/pythonlibs/#pillow. I have tested on `miniconda python 3.7` custom environment. To use this put `*.dll` from above link in same folder as `python.exe` in miniconda/anaconda `envs/MY_ENV_NAME` folder. If the code below gives `True` then it will render `Bangla` fonts properly.
