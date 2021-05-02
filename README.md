@@ -415,3 +415,20 @@ This should be done before doing `make`. After `make` command there will be a fi
 For GPU support use a gpu instance for example, ml.p3.2xlarge, is 16gb Nvidia V100 gpu. If vpc not required then select `no vpc`. Start the instance and run `Open JupyterLab`. The main reason for writing this is there is an error with `make` when makefile contains `OPENCV=1`. A working but poor solution is set `OPENCV=0` before make, but this will slow down training and inference as pointed out in output log. For kernel `conda_python3` will work. 
 
 TODO: Use `yum` to install opencv on system to see if opencv problem is solved.  
+
+
+## Python draw complex font text like bengali in image correctly
+
+Easiest option in windows is to download libraqm from here, https://www.lfd.uci.edu/~gohlke/pythonlibs/#pillow. I have tested on `miniconda python 3.7` custom environment. To use this put `*.dll` from above link in same folder as `python.exe` in miniconda/anaconda `envs/MY_ENV_NAME` folder. If the code below gives `True` then it will render `Bangla` fonts properly.
+
+```
+from PIL import features
+print(features.check("raqm"))
+```
+
+Windows install instructions, https://stackoverflow.com/questions/62939101/how-to-install-pre-built-pillow-wheel-with-libraqm-dlls-on-windows.
+Based on answer from, https://stackoverflow.com/questions/66184573/how-do-i-install-libraqm-library-in-google-colab.
+
+This script contains example in google colab,
+
+https://github.com/quickgrid/CodeLab/blob/master/colab/Pillow_Render_Bangla_Font_Text_to_Image_libraqm.ipynb
