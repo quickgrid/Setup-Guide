@@ -440,6 +440,7 @@ This script contains example in google colab,
 
 https://github.com/quickgrid/CodeLab/blob/master/colab/Pillow_Render_Bangla_Font_Text_to_Image_libraqm.ipynb
 
+<br>
 
 ## Blender black and white Bengali text to Path, Curve and Mesh
 
