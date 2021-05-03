@@ -439,3 +439,12 @@ https://stackoverflow.com/questions/66184573/how-do-i-install-libraqm-library-in
 This script contains example in google colab,
 
 https://github.com/quickgrid/CodeLab/blob/master/colab/Pillow_Render_Bangla_Font_Text_to_Image_libraqm.ipynb
+
+
+## Blender black and white Bengali text to Path, Curve and Mesh
+
+Black and white image can be converted to mesh by first using Inkscape to trace the image bitmap, then saving as plain svg. Which can be imported into blender and conveted to mesh. Blender `2.92` contain Grease Pencil tracing which works for image masks too. Drag and drop image in blender then using `Object > Trace Image to Grease Pencil` will convert to grease pencil strokes which can converted to path, curve, mesh. The mesh can be extruded to create 3D text object.
+
+Further details here,
+
+https://stackoverflow.com/questions/67361964/blender-render-complex-fonts-as-rendered-with-python-pillow-libraqm/67367610#67367610
