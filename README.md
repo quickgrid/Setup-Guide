@@ -449,3 +449,22 @@ Black and white image can be converted to mesh by first using Inkscape to trace 
 Further details here,
 
 https://stackoverflow.com/questions/67361964/blender-render-complex-fonts-as-rendered-with-python-pillow-libraqm/67367610#67367610
+
+<br>
+
+## TP Link Tapo C310 Wifi IP Camera Setup without Wired Internet on Router
+
+I am not sure if internet on router is necessary to setup the camera with router first time. It can be used without internet on the router after setup. Admin password on router should be 16 characters or less. There is a problem of auto truncating a longer password on certain router models which can be missed easily causing login problem.
+
+If wired internet is not available mobile hospot can be used to get internet in the router. If router has WDS bridge then it can be used to connect to mobile hotspot on 2.4GHz or 5GHz with password. This will allow other devices connected to router to get internet access of the mobile hotspot.
+
+This camera has two setup process wifi or ethernet. Setup camera through Tapo mobile app by connecting to camera first and connecting to router after camera is connected to it. When using wifi camera will mention connected to wifi through loud speaker. 
+
+`rtsp` streaming can be done via methods below for high and low resolution feed,
+
+```
+rtsp://username:password@camera_ip:554/stream1
+rtsp://username:password@camera_ip:554/stream2
+```
+
+This can used to stream via VLC or `OpenCV video capture` to run deep learning models. Username and password needs to be setup via tapo app for above to work.
