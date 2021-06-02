@@ -468,3 +468,19 @@ rtsp://username:password@camera_ip:554/stream2
 ```
 
 This can used to stream via VLC or `OpenCV video capture` to run deep learning models. Username and password needs to be setup via tapo app for above to work.
+
+<br>
+
+## Running Object Detection/Deep Learning Models Real Time on CPU
+
+- Try INT8, FP16 quantization.
+- Use ONNX runtime, OpenCV DNN, TFLite.
+- Use model compression, prunning.
+- Run drawing, other operations on separate threads.
+- In OpenCV use threaded non blocking webcam, file video capture.   
+- Detect in a frame and in next N frames run tracking only then again detect. Frame dropping and skipping.
+- Do cpu specific compilation of code take advantage of cpu architectures such as AVX2, AVX512 etc.
+- Use vectorized implementations instead of naive approaches.
+- Use C++ instead of python.
+- Use a smaller input resolution for the model at the cost of accuracy.
+
