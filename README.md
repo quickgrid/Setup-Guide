@@ -118,6 +118,12 @@ Depending on CPU cores CUDA compilation can be very slow. OpenCV CUDA build,
 
 https://haroonshakeel.medium.com/build-opencv-4-4-0-with-cuda-gpu-support-on-windows-10-without-tears-aa85d470bcd0.
 
+https://www.pyimagesearch.com/2020/02/03/how-to-use-opencvs-dnn-module-with-nvidia-gpus-cuda-and-cudnn/
+
+OpenCV python CUDA static build,
+
+https://github.com/opencv/opencv/issues/20206.
+
 ### Dlib
 
 Compile instructions,
