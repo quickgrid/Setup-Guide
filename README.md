@@ -1,5 +1,6 @@
 # Setup-Guide
-A build and setup guide for various libraries such as Dlib, OpenCV, NCNN etc for Windows C++, Python and Android C++, Java etc.
+
+A build and setup guide for various libraries, tools, cloud usage etc.
 
 
 ## Tools Required
@@ -494,3 +495,44 @@ This can used to stream via VLC or `OpenCV video capture` to run deep learning m
 - Use C++ instead of python.
 - Use a smaller input resolution for the model at the cost of accuracy.
 
+<br>
+
+## AWS EC2 TF, Pytorch Jupyter Notebook Tunneling and Browser Access
+
+First follow this video by Dr. Jeff Heaton heaton to get started with the process. 
+
+https://www.youtube.com/watch?v=WNfFD1MSj44
+
+Various AMI images available in aws marketplace one of which is NVIDIA Deep Learning AMI. Other interesting ones are AWS Deep Learning AMI (Ubuntu 18.04) and AWS Deep Learning Base AMI (Ubuntu 18.04). These seem to have pytorch, tensorflow setup by default. Linux version may be newer in future. Links to these AMI,
+
+https://aws.amazon.com/marketplace/pp/prodview-e7zxdqduz4cbs
+
+https://aws.amazon.com/marketplace/pp/prodview-dxk3xpeg6znhm
+
+https://aws.amazon.com/marketplace/pp/prodview-x5nivojpquy6y
+
+AWS marketplace AMI with aws, nvidia deep learning containers,
+
+https://aws.amazon.com/marketplace/search/results?searchTerms=deep+learning+containers&CREATOR=c568fe05-e33b-411c-b0ab-047218431da9%2Ce6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=CREATOR
+
+Nvidia NGC website has various containers such Tensorflow, Pytorch. For pytorch, tensorflow the docker commands available here,
+
+https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
+
+https://ngc.nvidia.com/catalog/containers/nvidia:tensorflow
+
+https://ngc.nvidia.com/catalog
+
+Release notes on AWS and Nvidia AMI,
+
+https://docs.aws.amazon.com/dlami/latest/devguide/appendix-ami-release-notes.html
+
+https://docs.nvidia.com/ngc/ngc-ami-release-notes/
+
+More information on Deep Learning AMI and EC2 `P3` instance, 
+
+https://docs.aws.amazon.com/dlami/latest/devguide/gs.html
+
+https://docs.aws.amazon.com/dlami/latest/devguide/overview-conda.html
+
+https://aws.amazon.com/ec2/instance-types/p3/
