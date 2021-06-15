@@ -536,3 +536,23 @@ https://docs.aws.amazon.com/dlami/latest/devguide/gs.html
 https://docs.aws.amazon.com/dlami/latest/devguide/overview-conda.html
 
 https://aws.amazon.com/ec2/instance-types/p3/
+
+To setup python container first setup tunneling port, ppk, ip via putty. These commands can be found on NGC containers link above. From putty terminal first run,
+
+```
+docker pull nvcr.io/nvidia/pytorch:21.05-py3
+```
+
+Afterward run below. The pytorch container version may be different and should be adjusted in both places. Mounting, container directory setup is also available in above NGC container link.
+
+```
+docker run --gpus all -it --rm -p 8888:8888 nvcr.io/nvidia/pytorch:21.05-py3
+```
+
+Following, https://stackoverflow.com/a/51851298/1689698, using the command for jupyter notebook gives the token which is used run jupyter notebook.
+
+```
+jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
+```
+
+This will give somethis like, `http://hostname:8888/?token=<ALPHANUMERTIC_TOKEN>`. In the browser running, `http://localhost:8888/?token=<ALPHANUMERTIC_TOKEN>` will give accesss to jupyter notebook.
