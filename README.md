@@ -543,7 +543,7 @@ To setup python container first setup tunneling port, ppk, ip via putty. These c
 docker pull nvcr.io/nvidia/pytorch:21.05-py3
 ```
 
-Afterward run below. The pytorch container version may be different and should be adjusted in both places. Mounting, container directory setup is also available in above NGC container link.
+Afterward run below. The pytorch container version may be different and should be adjusted in both places. Mounting, container directory setup is also available in above NGC container link which I did not try here.
 
 ```
 docker run --gpus all -it --rm -p 8888:8888 nvcr.io/nvidia/pytorch:21.05-py3
