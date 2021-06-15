@@ -555,4 +555,4 @@ Following, https://stackoverflow.com/a/51851298/1689698, using the command for j
 jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 ```
 
-This will give somethis like, `http://hostname:8888/?token=<ALPHANUMERTIC_TOKEN>`. In the browser running, `http://localhost:8888/?token=<ALPHANUMERTIC_TOKEN>` will give accesss to jupyter notebook.
+This will give somethis like, `http://hostname:8888/?token=<ALPHANUMERTIC_TOKEN>`. In the browser running, `http://localhost:8888/?token=<ALPHANUMERTIC_TOKEN>` will give accesss to jupyter notebook. It may take some time to load in browser for the first time.
