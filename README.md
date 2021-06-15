@@ -503,7 +503,7 @@ First follow this video by Dr. Jeff Heaton heaton to get started with the proces
 
 https://www.youtube.com/watch?v=WNfFD1MSj44
 
-Various AMI images available in aws marketplace one of which is NVIDIA Deep Learning AMI. Other interesting ones are AWS Deep Learning AMI (Ubuntu 18.04) and AWS Deep Learning Base AMI (Ubuntu 18.04). These seem to have pytorch, tensorflow setup by default. Linux version may be newer in future. Links to these AMI,
+Various AMI images available in aws marketplace one of which is `NVIDIA Deep Learning AMI`. Other interesting ones are `AWS Deep Learning AMI (Ubuntu 18.04)` and `AWS Deep Learning Base AMI (Ubuntu 18.04)`. These seem to have pytorch, tensorflow setup by default. Linux version may be newer in future. Links to these AMI,
 
 https://aws.amazon.com/marketplace/pp/prodview-e7zxdqduz4cbs
 
@@ -515,7 +515,7 @@ AWS marketplace AMI with aws, nvidia deep learning containers,
 
 https://aws.amazon.com/marketplace/search/results?searchTerms=deep+learning+containers&CREATOR=c568fe05-e33b-411c-b0ab-047218431da9%2Ce6a5002c-6dd0-4d1e-8196-0a1d1857229b&filters=CREATOR
 
-Nvidia NGC website has various containers such Tensorflow, Pytorch. For pytorch, tensorflow the docker commands available here,
+`Nvidia NGC` website has various containers such Tensorflow, Pytorch. For pytorch, tensorflow the docker commands available here,
 
 https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
 
