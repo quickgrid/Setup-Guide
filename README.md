@@ -537,7 +537,11 @@ https://docs.aws.amazon.com/dlami/latest/devguide/overview-conda.html
 
 https://aws.amazon.com/ec2/instance-types/p3/
 
-To setup python container first setup tunneling port, ppk, ip via putty. These commands can be found on NGC containers link above. From putty terminal first run,
+To setup python container first setup tunneling port, ppk, ip via putty. These commands can be found on NGC containers link above. 
+
+In putty `hostname` set ip address of the instance. Convert `*.pem` to `*.ppk` via puttygen with passphrase. Set `*.ppk` to `connection > SSH > Auth > Private key file for authentication`. Set `connection > SSH > Tunnels` source port to `8888`, destination to `localhost:8888` and click add. Save session settings with a name.
+
+From putty terminal first run,
 
 ```
 docker pull nvcr.io/nvidia/pytorch:21.05-py3
