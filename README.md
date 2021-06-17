@@ -579,3 +579,13 @@ For mouting local directory try this command, `docker run --gpus all -it --rm -p
 OpenCV `ImportError: libGL.so.1: cannot open shared object file: No such file or directory` is solved by `!pip install opencv-python-headless`.
 
 This way multiple terminals can be opened and anyone with ip address, ppk file will be able to access and modify jupyter notebook.
+
+<br>
+
+## Accessing Kaggle Dataset in AWS Jupyter Lab
+
+Get API token from kaggle account > API > Create New Token. This will provide `kaggle.json` file. Install kaggle api via pip, `!pip install kaggle`. Upload the json file and copy/move to `~/.kaggle/kaggle.json`, example, `cp /workspace/kaggle.json ~/.kaggle/kaggle.json`. 
+
+Delete the file if uploaded to workspace. Run, `chmod 600 /root/.kaggle/kaggle.json.`
+
+Download dataset following kaggle API. For example celebA dataset on kaggle can be downloaded by, `!kaggle datasets download -d jessicali9530/celeba-dataset`.
