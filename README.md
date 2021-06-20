@@ -574,7 +574,9 @@ docker run --gpus all -it --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes nvcr.io/nv
 jupyter lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 ```
 
-For mouting local directory try this command, `docker run --gpus all -it --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v /home/ubuntu/data/ml:/data/ml nvcr.io/nvidia/pytorch:21.05-py3`, here, `-v local_dir:container_dir`
+For mouting local directory try this command, `docker run --gpus all -it --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v /home/ubuntu/data/ml:/data/ml nvcr.io/nvidia/pytorch:21.05-py3`, here, `-v local_dir:container_dir`.
+
+Copy file from docker container to host via, `docker cp <CONTAINER_ID>:<FILE_TO_COPY_PATH> <HOST_PATH>`. For example, `docker cp 22d5ce7be75a:/path/to/weight.pt /home/ubuntu/`.
 
 OpenCV `ImportError: libGL.so.1: cannot open shared object file: No such file or directory` is solved by `!pip install opencv-python-headless`.
 
