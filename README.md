@@ -490,10 +490,15 @@ This can used to stream via VLC or `OpenCV video capture` to run deep learning m
 - Run drawing, other operations on separate threads.
 - In OpenCV use threaded non blocking webcam, file video capture.   
 - Detect in a frame and in next N frames run tracking only then again detect. Frame dropping and skipping.
+- Empty frame buffer/queue to always get the latest frame.
 - Do cpu specific compilation of code take advantage of cpu architectures such as AVX2, AVX512 etc.
+- Compile with oneDNN, oneMKL, CUDA, oneTBB, gstreamer etc.
 - Use vectorized implementations instead of naive approaches. Try Numba, CuPy.
-- Use C++ instead of python.
+- Use C++ instead of python for whole code.
+- Move slower part of python code to C++ and call as library.
 - Use a smaller input resolution for the model at the cost of accuracy.
+- Convert model to onnx, openvino optimized format.
+- Use better data structures and algorithms, tweak code to speedup.
 
 <br>
 
