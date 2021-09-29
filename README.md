@@ -596,3 +596,8 @@ Get API token from kaggle account > API > Create New Token. This will provide `k
 Delete the file if uploaded to workspace. Run, `chmod 600 /root/.kaggle/kaggle.json.`
 
 Download dataset following kaggle API. For example celebA dataset on kaggle can be downloaded by, `!kaggle datasets download -d jessicali9530/celeba-dataset`.
+
+## Tools for HikVision IP Camera Configuration
+
+SADP Tool - Set gateway, ip, password etc. 
+IVMS 4200 - Video recording, tools, configurations.
