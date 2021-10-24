@@ -599,6 +599,8 @@ Download dataset following kaggle API. For example celebA dataset on kaggle can 
 
 ## Tools for HikVision IP Camera Configuration
 
+Setting up ip camera requires having router and pc, but does not need NVR. It can record video via the tool below. Also can do `RTSP` streaming via, VLC, `OpenCV` or others to see video or run deep learning models.
+
 SADP Tool - Set gateway, ip, password etc. 
 
 IVMS 4200 - Video recording, tools, configurations.
