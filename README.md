@@ -602,3 +602,21 @@ Download dataset following kaggle API. For example celebA dataset on kaggle can 
 SADP Tool - Set gateway, ip, password etc. 
 
 IVMS 4200 - Video recording, tools, configurations.
+
+
+## Working with Embeddable Python Package and PIP
+
+If an embedded python package is required by some python or another language, GUI or console app in windows then it can be used. It can be downloaded here, https://www.python.org/downloads/windows/. An use case here is if a python app installer is created by `pyinstaller` and it requires embedded python to call some scripts.
+
+But default embedded python is lacking most libraries and does not have pip. In order to get pip first an `Windows embeddable package (64-bit)` zip file must be downloaded for desired python version. Then `get-pip.py` should be downloaded and put into where the embeddable python zip was extracted. It can be downloaded following this link, https://pip.pypa.io/en/stable/installation/.
+
+Running, `python get-pip.py` from terminal/cmd in the python directory will get pip. Now, packages can be installed normally. For example, `python -m pip install pyqt5`.
+
+In order to test it from a python script it can be called via `subprocess`. For example,
+
+```
+p = subprocess.Popen(
+    [os.path.join(os.getcwd(), 'embedded_python', 'python.exe'), 'script_that_requies_embedded_python.py'],
+    stdout=subprocess.PIPE, stderr=subprocess.PIPE
+)
+```
