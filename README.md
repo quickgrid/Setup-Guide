@@ -1,3 +1,5 @@
+## Update: Moved to, https://github.com/quickgrid/AI-Resources, to reduce fragmentation.
+
 # Setup-Guide
 
 A build and setup guide for various libraries, tools, cloud usage etc.
