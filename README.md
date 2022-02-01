@@ -1,4 +1,4 @@
-## Update: Moved to, https://github.com/quickgrid/AI-Resources, to reduce fragmentation.
+## `UPDATE:` Moved to, https://github.com/quickgrid/AI-Resources/blob/master/setup-guide.md, to reduce fragmentation.
 
 # Setup-Guide
 
