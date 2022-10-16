@@ -1,4 +1,4 @@
-## `UPDATE:` Moved to, https://github.com/quickgrid/ai-resources/blob/master/important-concepts.md, to reduce fragmentation.
+## `UPDATE:` Moved to, https://github.com/quickgrid/ai-resources/blob/master/setup-guide.md, to reduce fragmentation.
 
 # Setup-Guide
 
